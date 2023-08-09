@@ -35,10 +35,10 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: Extract project version
-        id: projectversion
         run: |
-          PROJVERSION="$(make version)"
-          echo "Project version is ${PROJVERSION}"
+          project_version="$(make version)"
+          echo "Project version is ${project_version}"
+          echo "project_version=${project_version}" >> $GITHUB_ENV
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@master
@@ -63,4 +63,4 @@ jobs:
           file: .docker/Dockerfile
           platforms: ${{ env.PLATFORMS }}
           push: true
-          tags: ${{ env.DOCKER_IMAGE }}:${{ steps.projectversion.outputs.versionimage }} , ${{ env.DOCKER_IMAGE }}:latest
+          tags: ${{ env.DOCKER_IMAGE }}:${{ env.project_version }} , ${{ env.DOCKER_IMAGE }}:latest
