@@ -1,4 +1,4 @@
-# Smtp To Slack
+# SMTP To Slack
 
 [![Integration Tests](https://github.com/paolodenti/smtp2slack/actions/workflows/tests.yaml/badge.svg)](https://github.com/paolodenti/smtp2slack/actions/workflows/tests.yaml)
 [![Build and Push](https://github.com/paolodenti/smtp2slack/actions/workflows/build-publish.yaml/badge.svg)](https://github.com/paolodenti/smtp2slack/actions/workflows/build-publish.yaml)
