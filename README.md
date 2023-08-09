@@ -2,7 +2,7 @@
 
 Simple SMTP to Slack converter, for internal use.
 
-It posts the content of the incoming email to a Slack webhook. 
+It posts the content of an incoming email to a Slack webhook. 
 
 SMTP protocol is implemented without TLS/SSL/Authentication.
 Only for internal use. **Do not publicly expose it**.
