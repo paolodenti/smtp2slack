@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: smtp2slack
+  profiles:
+    active:
+      - local
+
+app:
+  smtp:
+    port: ${SMTP_PORT:2525}
+    details: ${SMTP_DETAILS:true}
+  slack:
+    webhook: ${WEBHOOK_URL}
