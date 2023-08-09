@@ -1,5 +1,8 @@
 # Smtp To Slack
 
+[![Integration Tests](https://github.com/paolodenti/smtp2slack/actions/workflows/tests.yaml/badge.svg)](https://github.com/paolodenti/smtp2slack/actions/workflows/tests.yaml)
+[![Build and Push](https://github.com/paolodenti/smtp2slack/actions/workflows/build-publish.yaml/badge.svg)](https://github.com/paolodenti/smtp2slack/actions/workflows/build-publish.yaml)
+
 Simple SMTP to Slack converter, for internal use.
 
 It posts the content of an incoming email to a Slack webhook. 
