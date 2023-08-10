@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Bean;
  * ObjectMapper configuration.
  */
 public class JacksonConfig {
+
     /**
      * Jackson objectMapper configuration.
      *
@@ -15,6 +16,7 @@ public class JacksonConfig {
      */
     @Bean
     public ObjectMapper objectMapper() {
+
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JavaTimeModule());
         return objectMapper;

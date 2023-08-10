@@ -15,6 +15,7 @@ public class SmtpServerConfig {
 
     /**
      * SMTPServer bean.
+     *
      * @return an SMTPServer instance
      */
     @Bean
