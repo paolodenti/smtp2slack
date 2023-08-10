@@ -41,8 +41,8 @@ public class Smtp2SlackListener implements SimpleMessageListener {
                                 To: %s
                                 Subject: %s
                                 -------------------------
-                                %s
-                                """.formatted(from, recipient, message.getSubject(), message.getContent().toString());
+                                %s"""
+                                .formatted(from, recipient, message.getSubject(), message.getContent().toString());
 
                 slackPublisher.publish(detailMessage);
             } else {
@@ -58,6 +58,7 @@ public class Smtp2SlackListener implements SimpleMessageListener {
 
     /**
      * Converter from smtp inputStream to a mime message.
+     *
      * @param data smtp inputStream
      * @return mimeMessage
      * @throws MessagingException MessagingException

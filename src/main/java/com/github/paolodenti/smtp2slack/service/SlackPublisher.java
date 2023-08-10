@@ -23,10 +23,11 @@ public class SlackPublisher {
 
     /**
      * Slack publisher.
+     *
      * @param content the text to publish
-     * @throws IOException IOException
+     * @throws IOException          IOException
      * @throws InterruptedException InterruptedException
-     * @throws URISyntaxException URISyntaxException
+     * @throws URISyntaxException   URISyntaxException
      */
     public void publish(String content) throws IOException, InterruptedException, URISyntaxException {
 

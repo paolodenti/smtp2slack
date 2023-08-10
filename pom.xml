@@ -14,8 +14,8 @@
     <name>smtp2slack</name>
     <description>SMTP To Slack</description>
     <properties>
-
         <subethasmtp.version>5.2.4</subethasmtp.version>
+        <commons-email.version>1.5</commons-email.version>
 
         <snakeyaml.version>2.0</snakeyaml.version>
 
@@ -38,7 +38,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-email</artifactId>
-            <version>1.5</version>
+            <version>${commons-email.version}</version>
         </dependency>
 
         <!-- dev support -->
@@ -112,16 +112,6 @@
                     </plugin>
                 </plugins>
             </build>
-        </profile>
-        <profile>
-            <id>arm</id>
-            <dependencies>
-                <dependency>
-                    <groupId>io.netty</groupId>
-                    <artifactId>netty-resolver-dns-native-macos</artifactId>
-                    <classifier>osx-aarch_64</classifier>
-                </dependency>
-            </dependencies>
         </profile>
     </profiles>
 </project>
