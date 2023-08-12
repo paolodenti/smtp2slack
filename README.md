@@ -46,6 +46,6 @@ SMTP_DETAILS=false \
 ```
 docker run --rm -d \
   -e WEBHOOK_URL=https://hooks.slack.com/services/<your slack webhook> \
-  -p 25:2525
+  -p 25:2525 \
   paolodenti/smtp2slack:latest
 ```
